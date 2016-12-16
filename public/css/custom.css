@@ -1,0 +1,108 @@
+.margin-top-6
+{
+  margin-top:6px;
+}
+body{
+  background-color: white;
+}
+#cover
+{
+  height:30%;
+  width:100%;
+  background-color:#2d2c2c;
+  margin-top: -30px;
+}
+#profilepicturelg
+{
+position: relative;
+top:40px;
+}
+.profilepic{
+  border-style: solid;
+    border-width: medium;
+    border-color: white;
+      box-shadow: 0px 4px 14px 8px rgba(0,0,0,0.2);
+}
+#profilepicturesm
+{
+  position: relative;
+  top:50px;
+  left:23%;
+
+}
+#profilepicturesm img{
+
+
+
+}
+#userdetailslg
+{
+  margin-top: 50px;
+
+}
+.cloud{
+  color:#e0dcdc !important;
+}
+#userdetailssm
+{
+  margin-top: 50px;
+  text-align: center;
+  margin-left: inherit;
+}
+.navbar-default
+{
+  background-color: white !important;
+}
+#about
+{
+  margin-top: 2%;
+}
+h4{
+
+  color:#2d2c2c !important;
+}
+#contentnavbar
+{
+  background-color: #2d2c2c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.imagelement
+{
+  margin-bottom: 20px;
+}
+#contentsec
+{
+  box-shadow: 0px 8px 8px 8px rgba(0,0,0,0.2);
+  margin-top: -25px;
+  width:97.2%;
+
+}
+.graytext
+{
+  color:#2d2c2c;
+}
+#contentsec i {
+  font-size: 8em;
+  margin-left:40%;
+  margin-top: 10%;
+  margin-bottom: 12%;
+  color:gray;
+}
+#contentsec .row:nth-child(2){
+  margin-left:38.5% !important;
+  margin-top: -9% !important;
+  margin-bottom: 10%;
+
+}
+footer{
+
+
+    width: 100%;
+
+    line-height: 60px;
+    background-color: #2d2c2c;
+}
+#contentwrapper{
+  margin-bottom: 7% !important;
+}
