@@ -131,11 +131,7 @@
 </div>
 </div>
 
-<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-<div class="icon-circle">
-  <a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
+
 
 </div>
       </div>
