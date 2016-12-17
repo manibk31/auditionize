@@ -17,6 +17,9 @@
     <!-- Loading Flat UI -->
     <link href="{{asset('css/flatui/dist/css/flat-ui.css')}}" rel="stylesheet">
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
+    <link href="{{asset('css/magpopup/magnific-popup.css')}}" rel="stylesheet">
+
+
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -26,7 +29,7 @@
       <script src="{{asset('css/flatui/dist/js/vendor/respond.min.js')}}"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="width=100%">
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -63,7 +66,9 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+
 @yield('content')
+
     <footer class="footer">
       <div class="container">
         <div class="row" style="text-align:center">
@@ -84,7 +89,7 @@
       </a>
         </span>
 
-        <div  class="sicon pull-right hidden-xs hidden-sm">
+        <div  class="sicon pull-right hidden-xs hidden-sm ">
 
     <div  class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center" >
       <div class="icon-circle">
@@ -111,7 +116,7 @@
     </div>
 
   </div>
-  <div  class="sicon hidden-md hidden-lg col-xs-offset-3 col-sm-offset-3 col-xs-6 col-sm-6">
+  <div  class="sicon hidden-md hidden-lg col-xs-offset-3 col-xs-8 col-sm-offset-4" >
 
 <div  class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center" >
 <div class="icon-circle">
@@ -146,5 +151,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{asset('css/flatui/dist/js/vendor/video.js')}}"></script>
     <script src="{{asset('css/flatui/dist/js/flat-ui.min.js')}}"></script>
+      <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
+          <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
+          <script src={{asset('js/app.js')}}></script>
   </body>
 </html>
