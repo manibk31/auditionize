@@ -25,3 +25,17 @@ $(document).ready(function() {
 
 	});
 });
+
+
+
+
+
+
+
+
+/*Accordion*/
+
+
+
+
+/*Accordion*/

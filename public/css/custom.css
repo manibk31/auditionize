@@ -48,7 +48,8 @@ margin: 0 auto;
 {
   margin-top: 50px;
   text-align: center;
-  margin-left: inherit;
+
+
 }
 .navbar-default
 {
@@ -61,7 +62,7 @@ margin: 0 auto;
 }
 h4{
 
-  color:#2d2c2c !important;
+  color:#2d2c2c;
 }
 #contentnavbar
 {
@@ -194,3 +195,52 @@ box-shadow: 0 0 20px #000;
 .gallerylg{
   margin-top: 1%;
 }
+.contentsm
+{
+  margin-top: 10%;
+}
+.sectionheader
+{
+ text-align: center;
+ background-color: #2d2c2c;
+}
+.sectionheader h4
+{
+  color: #9aa4af !important;
+}
+
+
+
+
+
+
+.padding-all-5{
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+.middle{
+  margin:0 auto;
+}
+
+
+/*accordion*/
+
+.panel-heading
+{
+  text-align: center;
+
+}
+.panel-title a{
+  display: block;
+
+}
+.text-muted
+{
+
+}
+.center-align{
+  text-align: center;
+}
+
+/*endofaccordion*/
