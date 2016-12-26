@@ -108,7 +108,7 @@ footer{
 }
 #contentwrapper{
   margin-bottom: 7% !important;
-    box-shadow: 0px 8px 8px 8px rgba(0,0,0,0.2);
+
 }
 
 
@@ -243,4 +243,54 @@ padding-bottom: 20px;
   text-align: center;
 }
 
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #2ecc71;
+}
+.nav-pills{
+  padding:10px;
+
+}
+.nav-pills a{
+  color:#2d2c2c;
+}
+.card img:hover
+{
+  cursor:pointer;
+}
+.overlay{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+  opacity: 0.3;
+  background-color: gray;
+  text-align: center;
+}
+.card i{
+opacity: 1 !important;
+color: white;
+top:0;
+top:24%;
+z-index: 10;
+left:27%;
+position:absolute;
+cursor: pointer;
+
+}
+.box-shadow{
+    box-shadow: 0px 4px 14px 8px rgba(0,0,0,0.2);
+}
 /*endofaccordion*/
+.physicaldetailslg {
+
+}
+.th{
+  display:inline-block;
+  min-width: 160px;
+
+}
+.experiencelist ul{
+  list-style: none; 
+}

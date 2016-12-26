@@ -17,6 +17,9 @@
     <div class="col-xs-12">
       <h6 class="cloud" style="margin-bottom:-10px;">Chennai</h6>
     </div>
+    <div class="col-xs-12"  style="margin-top:10px; margin-left:3px">
+    <a href="#"><i class="fa fa-envelope fa-2" style="color:#e0dcdc " aria-hidden="true"  > </i> Message</a>
+    </div>
   </div>
 </div>
 <div id="profilepicsm" class="visible-xs visible-sm col-xs-12 col-sm-12" >
@@ -29,7 +32,7 @@
 </div>
 
 <div class="lobar">
-  s
+
 </div>
 
 <div id="userdetailssm" class="row visible-xs visible-sm" style="margin-bottom:12%">
@@ -49,14 +52,6 @@
 
 
 <div class="contentwrappersm hidden-lg hidden-md">
-
-
-
-
-
-
-
-
 <div class="accordionsec col-xs-12 col-md-12">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
@@ -67,8 +62,7 @@
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body graytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
       </div>
     </div>
     <div class="panel panel-default">
@@ -88,18 +82,19 @@
             </p>
           </div>
         </div> -->
-        <div class="gallerylg hidden-lg hidden-md col-xs-offset-1" style="margin-top:-25px">
-          <div class="zoom-gallery">
+        <div class="gallerylg hidden-lg hidden-md" style="margin-top:-25px">
+          <div id="mobileimg" class="zoom-gallery">
             <div >
-        	<a  class="col-xs-6"  href="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg" caption="Into The Blue" style="height:200px; width:200px">
-        		<img src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"  height="200" width="200">
+        	<a id="small" class="col-xs-12"  href="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg" caption="Into The Blue" style="height:200px; width:200px">
+        		<img  src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"  height="200" width="200">
         	</a>
         </div>
           <div >
-        	<a  class="col-xs-6" href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
-        		<img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
+        	<a id="small" class="col-xs-12" href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
+        		<img id="small" src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
         	</a>
             </div>
+
 
         </div>
         </div>
@@ -126,6 +121,40 @@
             </div>-->
 
 
+
+
+
+<div id="videos" class="container">
+    <div class="col-xs-6 col-xs-offset-2 padding-all-5 " >
+
+
+
+    <div class="card ">
+            <div class="overlay box-shadow"   >
+        </div>
+          <i class="fa fa-play-circle fa-5x video card-img-top " data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal"></i>
+      <img class="box-shadow" src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"
+       height="200" width="200" >
+
+    </div>
+
+</div>
+<div class="col-xs-6 col-xs-offset-2 padding-all-5" >
+
+
+
+<div class="card ">
+        <div class="overlay box-shadow"   >
+    </div>
+      <i class="fa fa-play-circle fa-5x video card-img-top " data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal"></i>
+  <img class="box-shadow" src="https://upload.wikimedia.org/wikipedia/en/1/18/Inception_OST.jpg"
+   height="200" width="200" >
+
+</div>
+
+</div>
+  </div>
+
         </div>
       </div>
     </div>
@@ -135,19 +164,20 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Physical Details</a>
         </h4>
       </div>
+
       <div id="collapse4" class="panel-collapse collapse">
         <div class="panel-body">
 
 
 
-          <!--  <div class="row center-align">
+          <!--     <div class="row center-align">
                       <i class="row fa fa-address-card fa-lg"  aria-hidden="true"></i>
                       <div class="row">
                         <p class="graytext">
                           No details available
                         </p>
                       </div>
-                    </div> -->
+                    </div>     -->
 
 
 
@@ -162,6 +192,10 @@
       </div>
       <div id="collapse5" class="panel-collapse collapse">
         <div class="panel-body">
+
+
+
+
 
           <!--<div class="row center-align">
                     <i class="row fa fa-address-card fa-lg"  aria-hidden="true"></i>
@@ -260,15 +294,196 @@ w
 <div class="container">
   <div id="about" class="row visible-lg visible-md col-lg-offset-2 col-md-offset-2">
     <div class="col-xs-10">
-    <p class="graytext visible-lg visible-md" style="text-align:justify">This code of ethics should reflect the standards that are put forth by the profession and the expectations that the profession has for those who work in this field. When developing the code of ethics I reflected on what has been
-      important to me in my career in terms of tecshnology, ethics, and safety in the military and in my current career. </p>
+    <p class="graytext visible-lg visible-md" style="text-align:justify">This code of ethics should reflect the standards that are put
+       forth by the profession and the expectations that the profession has for those who work in this field. When developing the code of ethics I reflected on what has been
+      important to me. </p>
       </div>
 </div>
 </div>
 
 <div id="contentwrapper" class="container hidden-xs hidden-sm" style="margin-bottom:25px;">
 
+<div class="row">
+<div class="col-lg-7">
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="tab" href="#home">Gallery</a></li>
+    <li><a data-toggle="tab" href="#menu1">Videos</a></li>
+    <li><a data-toggle="tab" href="#menu2">Physical details</a></li>
+      <li><a data-toggle="tab" href="#menu3">Experience</a></li>
+  </ul>
+</div>
+</div>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
 
+
+      <div class="gallerylg hidden-sm hidden-xl">
+        <div id="desktopimg" class="zoom-gallery">
+
+          <div class="col-xs-3 col-sm-3 padding-all-5" >
+        <a href="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg" caption="Into The Blue" style="height:200px; width:200px">
+          <img src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"  height="200" width="200">
+        </a>
+      </div>
+        <div class="col-xs-3 col-sm-3 padding-all-5" >
+        <a   href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
+          <img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
+        </a>
+          </div>
+          <div class="col-xs-3 col-sm-3 padding-all-5" >
+        <a href="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg" caption="Into The Blue" style="height:200px; width:200px">
+          <img src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"  height="200" width="200">
+        </a>
+      </div>
+        <div class="col-xs-3 col-sm-3 padding-all-5" >
+        <a   href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
+          <img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
+        </a>
+          </div>
+          <div class="col-xs-3 col-sm-3 padding-all-5" >
+          <a   href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
+            <img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
+          </a>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 padding-all-5" >
+            <a   href="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg" caption="Light Sabre" style="height:200px; width:200px">
+              <img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
+            </a>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="gallerylg hidden-sm hidden-xl" >
+
+              <div id="videos" class="row">
+
+
+          <div class="col-xs-3 col-sm-3 padding-all-5" >
+
+
+
+            <div class="card ">
+                    <div class="overlay box-shadow"   >
+                </div>
+                  <i class="fa fa-play-circle fa-5x video card-img-top " data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal"></i>
+              <img class="box-shadow" src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"
+               height="200" width="200" >
+
+            </div>
+
+      </div>
+      <div class="col-xs-3 col-sm-3 padding-all-5" >
+
+
+
+        <div class="card ">
+                <div class="overlay box-shadow"   >
+            </div>
+              <i class="fa fa-play-circle fa-5x video card-img-top " data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal"></i>
+          <img class="box-shadow" src="https://upload.wikimedia.org/wikipedia/en/1/18/Inception_OST.jpg"
+           height="200" width="200" >
+
+        </div>
+
+  </div>
+
+
+
+  </div>
+</div>
+</div>
+<div id="menu2" class="tab-pane fade">
+<div class="row physicaldetailslg" style="padding:20px;">
+
+<div class=" col-lg-12" >
+
+  <table class="physicaldetailslg table table-striped" cellspacing="0">
+  	<tbody><tr>
+  		<td>
+  	    <div class="th">Height:</div> 170 cm / 5ft 7in
+      </td><td>
+  	    <div class="th">Waist:</div> 63 cm / 25in
+      </td>
+  	</tr><tr>
+  		<td>
+  	    <div class="th">Weight:</div> 50 kg / 110 lbs
+      </td><td>
+  	    <div class="th">Hips:</div> 83 cm / 33in
+      </td>
+  	</tr><tr>
+  		<td>
+  	    <div class="th">Hair colour:</div> Brown
+      </td>
+      <td>
+        <div class="th">Chest:</div> 81 cm / 32 in
+      </td>
+  	</tr><tr>
+  		<td>
+  	    <div class="th">Skin colour:</div> Tanned
+      </td><td>
+  	    <div class="th">Hair length:</div> Long
+      </td>
+  	</tr><tr>
+  		<td>
+  	    <div class="th">Eye colour:</div> Brown
+      </td><td>
+  	    <div class="th">Hair type:</div> Straight
+      </td>
+  	</tr><tr>
+
+  	</tr>
+  </tbody></table>
+
+</div>
+</div>
+
+</div>
+<div id="menu3" class="tab-pane fade">
+
+
+
+
+
+<div class="row container">
+
+  <div data-section="3" id="section3" class="accordion section-t" style="display: block;">
+  								<div class="accordion__header clearfix">
+  									<h4 class="graytext center-align">
+  										<span  style="margin: 0 0 2px 0;"></span>
+  										Credits &amp; Courses
+  									</h4>
+  								</div>
+  								<div class=" center-align">
+  									<div class="experiencelist">
+
+  										<div class="clearfix"></div>
+  										<span><h5>2016</h5><ul><li>Ignite Elite Artists : <i>Actress</i></li></ul></span>
+  									</div>
+  								</div>
+  							</div>
+
+</div>
+</div>
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!--
   <div id="contentnav" class="visible-lg visible-md ">
     <div class="row" style="background-color:#2d2c2c">
       <div class="col-xs-12">
@@ -287,14 +502,13 @@ w
 
               <li><a href="#fakelink">Experience</a></li>
              </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav><!-- /navbar -->
+            </div>
+        </nav>
       </div>
     </div>
   </div>
 
-
-
+-->
 
 
 <div id="contentsec" class="container">
@@ -305,9 +519,10 @@ w
   </p>
 </div>
 -->
+<!--
 <div class="contentlg">
 <div class="gallerylg hidden-sm hidden-xl">
-  <div class="zoom-gallery" >
+  <div id="desktopimg" class="zoom-gallery" >
 
     <div class="col-xs-3 col-sm-3 padding-all-5" >
   <a href="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg" caption="Into The Blue" style="height:200px; width:200px">
@@ -340,11 +555,11 @@ w
         <img src="http://www.ranthollywood.com/wp-content/uploads/2014/08/1.-Ryan-Gosling.jpg"  height="200" width="200">
       </a>
         </div>
+      </div>
+</div>
 
-
 </div>
-</div>
-</div>
+-->
 </div>
 </div>
 </div>

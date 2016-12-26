@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>StarPeek</title>
+    <title>ShortCrew</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -36,12 +36,16 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="#">StarPeek</a>
+          <a class="navbar-brand" href="#">ShortCrew</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Auditions</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#about">Post Requirement</a></li>
             <li><a href="#about">Artists</a></li>
+            <li><a href="#about">Projects</a></li>
+              <li><a href="#about">Funding</a></li>
+              <li><a href="#about">Flix Zone</a></li>
           <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -73,17 +77,17 @@
       <div class="container">
         <div class="row" style="text-align:center">
 
-        <span class="text-muted col-lg-2 col-md-2 col-sm-12 col-xs-12">
+        <span class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
           <a href="#">
         Contact us
       </a>
         </span>
-        <span class="text-muted col-lg-2 col-md-2 col-sm-12 col-xs-12">
+        <span class=" col-lg-2 col-md-2 col-sm-12 col-xs-12">
           <a href="#">
         About us
       </a>
         </span>
-        <span class="text-muted col-lg-2 col-md-2 col-sm-12 col-xs-12">
+        <span class=" col-lg-2 col-md-2 col-sm-12 col-xs-12">
           <a href="#">
       Terms of use
       </a>
@@ -147,6 +151,7 @@
 
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+
     <script src="{{asset('css/flatui/dist/js/vendor/jquery.min.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{asset('css/flatui/dist/js/vendor/video.js')}}"></script>
@@ -154,5 +159,13 @@
       <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
           <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
           <script src={{asset('js/app.js')}}></script>
+
+
+
+          <!-- Magnific Popup core CSS file -->
+
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+
   </body>
 </html>
