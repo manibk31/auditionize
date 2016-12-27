@@ -283,14 +283,24 @@ cursor: pointer;
     box-shadow: 0px 4px 14px 8px rgba(0,0,0,0.2);
 }
 /*endofaccordion*/
-.physicaldetailslg {
+.physicaldetailssm td,.physicaldetailssm tr{
+display:block;
+}
+
+.physicaldetailssm .th{
+  display:inline-block;
+  min-width: 120px;
 
 }
-.th{
+
+.physicaldetailslg .th{
   display:inline-block;
   min-width: 160px;
 
 }
 .experiencelist ul{
-  list-style: none; 
+  list-style: none;
+}
+#sendmessage textarea{
+  resize: none;f
 }

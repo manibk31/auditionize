@@ -44,8 +44,7 @@
             <li><a href="#about">Post Requirement</a></li>
             <li><a href="#about">Artists</a></li>
             <li><a href="#about">Projects</a></li>
-              <li><a href="#about">Funding</a></li>
-              <li><a href="#about">Flix Zone</a></li>
+            
           <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -113,11 +112,6 @@
       </div>
     </div>
 
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-      <div class="icon-circle">
-        <a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-    </div>
 
   </div>
   <div  class="sicon hidden-md hidden-lg col-xs-offset-3 col-xs-8 col-sm-offset-4" >

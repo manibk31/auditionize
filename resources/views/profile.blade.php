@@ -17,8 +17,14 @@
     <div class="col-xs-12">
       <h6 class="cloud" style="margin-bottom:-10px;">Chennai</h6>
     </div>
-    <div class="col-xs-12"  style="margin-top:10px; margin-left:3px">
-    <a href="#"><i class="fa fa-envelope fa-2" style="color:#e0dcdc " aria-hidden="true"  > </i> Message</a>
+    <div id="message" class="col-xs-2"  style="margin-top:10px; margin-left:3px; color:#e0dcdc; " data-toggle="modal" data-target="#myModal">
+  <i class="fa fa-envelope fa-2" style="color:#e0dcdc;cursor:pointer" aria-hidden="true"  > </i><span style="color:#e0dcdc;cursor:pointer;"><a> Message</a></span>
+    </div>
+    <div id="followers" class="col-xs-2"  style="margin-top:10px; margin-left:3px; color:#e0dcdc; " >
+  <span style="color:#e0dcdc;cursor:pointer;"> 0 <a>Followers</a></span>
+    </div>
+    <div id="following" class="col-xs-2"  style="margin-top:10px; margin-left:3px; color:#e0dcdc; " >
+  <span style="color:#e0dcdc;cursor:pointer;"> 14 <a>Following</a></span>
     </div>
   </div>
 </div>
@@ -125,7 +131,7 @@
 
 
 <div id="videos" class="container">
-    <div class="col-xs-6 col-xs-offset-2 padding-all-5 " >
+    <div class="col-xs-8  col-sm-4  " >
 
 
 
@@ -139,7 +145,7 @@
     </div>
 
 </div>
-<div class="col-xs-6 col-xs-offset-2 padding-all-5" >
+<div class="col-xs-8  col-sm-4" >
 
 
 
@@ -168,7 +174,49 @@
       <div id="collapse4" class="panel-collapse collapse">
         <div class="panel-body">
 
+          <div class="row center-align"  style="padding:20px;">
 
+          <div class=" col-xs-12" >
+
+            <table class="physicaldetailssm table" cellspacing="0">
+              <tbody><tr>
+                <td>
+                  <div class="th">Height:</div> 170 cm
+                </td><td>
+                  <div class="th">Waist:</div> 63 cm
+                </td>
+              </tr><tr>
+                <td>
+                  <div class="th">Weight:</div> 50 kg
+                </td><td>
+                  <div class="th">Hips:</div> 83 cm
+                </td>
+              </tr><tr>
+                <td>
+                  <div class="th">Hair colour:</div> Brown
+                </td>
+                <td>
+                  <div class="th">Chest:</div> 81 cm
+                </td>
+              </tr><tr>
+                <td>
+                  <div class="th">Skin colour:</div> Tanned
+                </td><td>
+                  <div class="th">Hair length:</div> Long
+                </td>
+              </tr><tr>
+                <td>
+                  <div class="th">Eye colour:</div> Brown
+                </td><td>
+                  <div class="th">Hair type:</div> Straight
+                </td>
+              </tr><tr>
+
+              </tr>
+            </tbody></table>
+
+          </div>
+          </div>
 
           <!--     <div class="row center-align">
                       <i class="row fa fa-address-card fa-lg"  aria-hidden="true"></i>
@@ -194,7 +242,25 @@
         <div class="panel-body">
 
 
+          <div class="row container">
 
+            <div data-section="3" id="section3" class="accordion section-t" style="display: block;">
+            								<div class="accordion__header clearfix">
+            									<h5 class="graytext center-align">
+            										<span  style="margin: 0 0 2px 0;"></span>
+            										Credits &amp; Courses
+            									</h5>
+            								</div>
+            								<div class=" center-align">
+            									<div class="experiencelist">
+
+            										<div class="clearfix"></div>
+            										<span><h6>2016</h6><ul><li>Ignite Elite Artists : <i>Actress</i></li></ul></span>
+            									</div>
+            								</div>
+            							</div>
+
+          </div>
 
 
           <!--<div class="row center-align">
@@ -402,22 +468,22 @@ w
   <table class="physicaldetailslg table table-striped" cellspacing="0">
   	<tbody><tr>
   		<td>
-  	    <div class="th">Height:</div> 170 cm / 5ft 7in
+  	    <div class="th">Height:</div> 170 cm
       </td><td>
-  	    <div class="th">Waist:</div> 63 cm / 25in
+  	    <div class="th">Waist:</div> 63 cm
       </td>
   	</tr><tr>
   		<td>
-  	    <div class="th">Weight:</div> 50 kg / 110 lbs
+  	    <div class="th">Weight:</div> 50 kg
       </td><td>
-  	    <div class="th">Hips:</div> 83 cm / 33in
+  	    <div class="th">Hips:</div> 83 cm
       </td>
   	</tr><tr>
   		<td>
   	    <div class="th">Hair colour:</div> Brown
       </td>
       <td>
-        <div class="th">Chest:</div> 81 cm / 32 in
+        <div class="th">Chest:</div> 81 cm
       </td>
   	</tr><tr>
   		<td>
@@ -448,9 +514,9 @@ w
 
 <div class="row container">
 
-  <div data-section="3" id="section3" class="accordion section-t" style="display: block;">
+  <div data-section="3" id="section3" class="center-align" style="display: block;">
   								<div class="accordion__header clearfix">
-  									<h4 class="graytext center-align">
+  									<h4 class="graytext ">
   										<span  style="margin: 0 0 2px 0;"></span>
   										Credits &amp; Courses
   									</h4>
@@ -563,4 +629,84 @@ w
 </div>
 </div>
 </div>
+
+
+<div class="modal fade" id="sendmessage" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Message Manikandan</h4>
+      </div>
+      <div class="modal-body">
+
+        <form id="sendmessage" class="form">
+          <div class="form-group">
+
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div>
+    </div><!-- /.modal-content -->
+
+
+
+
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="followers" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Following</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal  -->
+
+
+
+<div class="modal fade" id="following" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Following</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal  -->
+
+
+
+
+
 @stop
