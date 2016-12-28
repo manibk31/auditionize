@@ -44,7 +44,7 @@
             <li><a href="#about">Post Requirement</a></li>
             <li><a href="#about">Artists</a></li>
             <li><a href="#about">Projects</a></li>
-            
+
           <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -141,7 +141,12 @@
       </div>
     </footer>
 
-    <!-- /.container -->
+    <!-- /.container --><script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
 
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
@@ -153,7 +158,6 @@
       <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
           <script src="{{asset('css/magpopup/jquery.magnific-popup.js')}}"></script>
           <script src={{asset('js/app.js')}}></script>
-
 
 
           <!-- Magnific Popup core CSS file -->

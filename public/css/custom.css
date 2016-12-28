@@ -304,3 +304,14 @@ display:block;
 #sendmessage textarea{
   resize: none;f
 }
+.modal-body{
+  min-height: 150px;
+}
+.centered {
+  display: table;
+ margin: 0 auto;
+
+}
+.padding-15{
+  padding:15px;
+}
