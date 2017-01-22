@@ -5,18 +5,19 @@
     <div class="container">
       <div class="row visible-lg visible-md ">
     <div class="col-xs-3 col-sm-3 col-lg-2 col-md-3" id="profilepicturelg">
-      <img class="img-responsive profilepic" style="height:200px;width:150px" src="https://s-media-cache-ak0.pinimg.com/originals/86/a0/96/86a096599588356a8b8553f46739fa14.jpg">
+      <img class="img-responsive profilepic" style="height:200px;width:150px" src="{{route('profilepicture',['filename'=>'test123.jpeg'])}}">
     </div>
     <div id="userdetailslg" class="col-xs-8 col-sm-7 col-lg-10 col-md-9">
       <div class="col-xs-12" >
-        <h4 class="cloud" style="margin-bottom:-10px;">Abhinandh Bharadwaj</h4>
+        <h4 class="cloud" style="margin-bottom:-10px;">@if($personal!=null) {{$personal->firstname}} {{$personal->lastname}} @endif</h4>
       </div>
       <div class="col-xs-12">
-        <h6  class="cloud" style="margin-bottom:-10px;">Actor</h6>
+        <h6  class="cloud" style="margin-bottom:-10px;"> @if($personal!=null) {{$personal->primaryrole}}  @endif</h6>
       </div>
       <div class="col-xs-12">
-        <h6 class="cloud" style="margin-bottom:-10px;">Coimbatore</h6>
+        <h6 class="cloud" style="margin-bottom:-10px;"> @if($personal!=null){{$personal->location}} @endif</h6>
       </div>
+      <div class="interactionbarlg">
       <div id="message" class="col-xs-2"  style="margin-top:10px; margin-left:3px; color:#e0dcdc; " data-toggle="modal" data-target="#sendmessage">
     <i class="fa fa-envelope fa-2" style="color:#e0dcdc;cursor:pointer" aria-hidden="true"  > </i><span style="color:#e0dcdc;cursor:pointer;"><a> Message</a></span>
       </div>
@@ -27,10 +28,11 @@
     <span style="color:#e0dcdc;cursor:pointer;"> 0 <a>Following</a></span>
       </div>
     </div>
+    </div>
   </div>
   <div id="profilepicsm" class="visible-xs visible-sm col-xs-12 col-sm-12" >
     <div id="profilepicturesm" >
-      <img class="img-rounded img-responsive profilepic" style="height:200px;width:150px" src="https://s-media-cache-ak0.pinimg.com/originals/86/a0/96/86a096599588356a8b8553f46739fa14.jpg">
+      <img class="img-rounded img-responsive profilepic" style="height:200px;width:150px" src="{{route('profilepicture',['filename'=>'test123.jpeg'])}}">
     </div>
   </div>
 
@@ -44,18 +46,31 @@
   <div id="userdetailssm" class="row visible-xs visible-sm" style="margin-bottom:12%">
     <div class="col-xs-offset-2 col-xs-8">
       <div class="col-xs-12 col-sm-12" style="text-align:center">
-        <h4 style="margin-bottom:-10px; color:#2d2c2c">Abhinandh Bharadwaj</h4>
+        <h4 style="margin-bottom:-10px; color:#2d2c2c">@if($personal!=null){{$personal->firstname}} {{$personal->lastname}} @endif</h4>
       </div>
       <div class="col-xs-12">
-        <h6 style="margin-bottom:-10px; color:#2d2c2c">Actor</h6>
+        <h6 style="margin-bottom:-10px; color:#2d2c2c">@if($personal!=null){{$personal->primaryrole}}@endif</h6>
       </div>
       <div class="col-xs-12">
-        <h6 style="margin-bottom:-10px; color:#2d2c2c">Chennai</h6>
+        <h6 style="margin-bottom:-10px; color:#2d2c2c">@if($personal!=null){{$personal->location}}@endif</h6>
       </div>
     </div>
   </div>
+  <div class="interactionbarsm hidden-lg hidden-md  centered">
 
 
+    <div class="col-xs-12">
+  <div id="message" class="col-xs-4 center-align"   data-toggle="modal" data-target="#sendmessage">
+<i class="fa fa-envelope fa-2" aria-hidden="true"  > </i><span ><a> Message</a></span>
+  </div>
+  <div  class="col-xs-4 center-align"    data-toggle="modal" data-target="#followers" >
+<span > 0 <a>Followers</a></span>
+  </div>
+  <div  class="col-xs-4 center-align" data-toggle="modal" data-target="#following">
+<span > 0 <a>Following</a></span>
+  </div>
+</div>
+</div>
 
   <div class="contentwrappersm hidden-lg hidden-md">
   <div class="accordionsec col-xs-12 col-md-12">
@@ -67,8 +82,7 @@
           </h4>
         </div>
         <div id="collapse1" class="panel-collapse collapse in">
-          <div class="panel-body graytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+          <div class="panel-body graytext">@if($personal!=null){{$personal->about}}@endif</div>
         </div>
       </div>
       <div class="panel panel-default">
@@ -246,7 +260,7 @@
 
               <div data-section="3" id="section3" class="accordion section-t" style="display: block;">
               								<div class="accordion__header clearfix">
-              									<h5 class="graytext center-align">
+              									<h5 class="center-align">
               										<span  style="margin: 0 0 2px 0;"></span>
               										Credits &amp; Courses
               									</h5>
@@ -360,22 +374,34 @@
   <div class="container">
     <div id="about" class="row visible-lg visible-md col-lg-offset-2 col-md-offset-2">
       <div class="col-xs-10">
-      <p class="graytext visible-lg visible-md" style="text-align:justify">This code of ethics should reflect the standards that are put
-         forth by the profession and the expectations that the profession has for those who work in this field. When developing the code of ethics I reflected on what has been
-        important to me. </p>
+      <p class="graytext visible-lg visible-md" style="text-align:justify">@if($personal!=null){{$personal->about}}@endif</p>
+        <div class="row">
+          <a  class="btn btn-social-icon btn-twitter facebook ">
+           <span class="fa fa-facebook fa-2x"></span>
+         </a>
+          <a class="btn btn-social-icon btn-twitter  twitter">
+           <span class="fa fa-twitter fa-2x"></span>
+         </a>
+         <a class="btn btn-social-icon btn-twitter gplus ">
+          <span class="fa fa-google-plus fa-2x"></span
+            >
+        </a>
+
+        </div>
         </div>
   </div>
   </div>
 
-  <div id="contentwrapper" class="container hidden-xs hidden-sm" style="margin-bottom:25px;">
+  <div id="contentwrapper" class="container hidden-xs hidden-sm" style="margin-bottom:25px; margin-top:15px;">
 
   <div class="row ">
-  <div class=" centered">
-    <ul class="nav nav-pills ">
+  <div>
+    <ul class="nav nav-pills nav-justified">
       <li class="active"><a data-toggle="tab" href="#home">Gallery</a></li>
       <li><a data-toggle="tab" href="#menu1">Videos</a></li>
       <li><a data-toggle="tab" href="#menu2">Physical details</a></li>
         <li><a data-toggle="tab" href="#menu3">Experience</a></li>
+            <li><a data-toggle="tab" href="#menu4">Contact</a></li>
     </ul>
   </div>
   </div>
@@ -438,7 +464,7 @@
                  height="200" width="200" >
 
               </div>
-        
+
 
         </div>
         <div class="col-xs-3 col-sm-3 padding-all-5">
@@ -515,7 +541,7 @@
   <div class="row container">
   <div data-section="3" id="section3" class="center-align" style="display: block;">
     								<div class="accordion__header clearfix">
-    									<h4 class="graytext ">
+    									<h4 >
     										<span  style="margin: 0 0 2px 0;"></span>
     										Credits &amp; Courses
     									</h4>
@@ -530,6 +556,24 @@
     							</div>
   </div>
   </div>
+
+  <div id="menu4" class="tab-pane fade">
+    <div class="container centered padding-all-5">
+
+      <div class="row centered">
+            <i class="row fa fa-phone fa-4x"  aria-hidden="true"></i>
+      </div>
+      <div class="row centered">
+          <p class="graytext">+91 9944788581</p>
+      </div>
+      <div class="row centered">
+            <i class="row fa fa-envelope fa-4x"  aria-hidden="true"></i>
+      </div>
+      <div class="row centered">
+          <p class="graytext">mani.bk31@gmail.com</p>
+      </div>
+    </div>
+</div>
         <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">

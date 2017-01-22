@@ -1,4 +1,6 @@
+document.getElementById('uploadpreview').style.display="none";
 $(document).ready(function() {
+
 
 	$('#mobileimg').magnificPopup({
 		delegate: 'a',
@@ -70,8 +72,41 @@ $(function() {
    });
  });
 
+ var text_max = 1000;
 
 
+ $('#about').keyup(function() {
+   var text_length = $('#about').val().length;
+   var text_remaining = text_max - text_length;
+
+   $('#count_message').html(text_remaining + ' remaining');
+	 if(text_remaining<0)
+	 {
+		 $('#count_message').hide();
+	 }
+	 else
+	 	{
+				 $('#count_message').show();
+		}
+
+ });
+
+ document.getElementById("galleryimages").onchange = function () {
+
+		$('#uploadpreview').show();
+
+
+
+     var reader = new FileReader();
+
+     reader.onload = function (e) {
+         // get loaded data and render thumbnail.
+         document.getElementById("image").src = e.target.result;
+     };
+
+     // read the image file as a data URL.
+     reader.readAsDataURL(this.files[0]);
+ };
 
 
 

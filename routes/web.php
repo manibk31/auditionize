@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('profile');
-});
+
+
+
+    // Place all your web routes here...
+
+        // Place all your web routes here...(Cut all `Route` which are define in `Route file`, paste here)
+        Route::get('/', array('as'=>'view_profile','uses'=>'ProfileController@getProfile'));
+        Route::post('/post_personal',array('as'=>'post_personal','uses'=>'EditController@postPersonal'));
+        Route::get('/edit_profile',array('as'=>'edit_profile','uses'=>'EditController@viewProfile'));
+        Route::get('/home', 'HomeController@index');
+        Route::get('/profilepicture/{filename}',array('as'=>'profilepicture','uses'=>'EditController@diplayProfilePicture'));
+        Route::post('/galleryimage',array('as'=>'galleryimage','uses'=>'EditController@postGalleryImage'));
+        Auth::routes();

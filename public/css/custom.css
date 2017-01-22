@@ -46,7 +46,7 @@ margin: 0 auto;
 }
 #userdetailssm
 {
-  margin-top: 50px;
+  margin-top: 5%;
   text-align: center;
 
 
@@ -60,10 +60,7 @@ margin: 0 auto;
   margin-top: -3%;
 
 }
-h4{
 
-  color:#2d2c2c;
-}
 #contentnavbar
 {
   background-color: #2d2c2c;
@@ -315,3 +312,88 @@ display:block;
 .padding-15{
   padding:15px;
 }
+
+.facebook{
+color:#2d2c2c;
+  -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ /* ...and now for the proper property */
+ transition:.5s;
+}
+.facebook:hover{
+  color:#3b5998;
+}
+
+.twitter{
+color:#2d2c2c;
+  -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ /* ...and now for the proper property */
+ transition:.5s;
+}
+.twitter:hover{
+  color:#326ada;
+}
+
+.gplus{
+color:#2d2c2c;
+  -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ /* ...and now for the proper property */
+ transition:.5s;
+}
+.gplus:hover{
+  color:#d34836;
+}
+.interactionbarsm i,span{
+  color:#2d2c2c;
+  cursor:pointer;
+}
+.interactionbarsm > .col-xs-12
+{
+  display: inline-block;
+}
+.interactionbarsm
+{
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+#captionsection{
+  margin-left:250px;
+}
+.editimage{
+  margin-top: 15px;
+  padding-left: 0px;
+  margin-bottom:25px;
+}
+#edittab .col-md-3{
+  padding-left:0px;
+}
+.editimage .col-md-9,.editimage .col-md-12{
+  padding-left:0px;
+}
+.padding-left-0{
+  padding-left:0px;
+}
+.padding-bottom-25{
+  padding-bottom: 25px;
+}
+.file_button_container,
+  .file_button_container input {
+       height: 47px;
+       width: 263px;
+   }
+
+   .file_button_container {
+       background: transparent url(http://i.stack.imgur.com/BT5AB.png) left top no-repeat;
+   }
+
+   .file_button_container input {
+       opacity: 0;
+   }
