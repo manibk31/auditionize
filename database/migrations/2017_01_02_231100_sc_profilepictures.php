@@ -18,8 +18,8 @@ class ScProfilepictures extends Migration
           $table->increments('id');
           $table->string('username');
           $table->string('fullsize');
-          $table->string('thumb');
-          $table->string('xsmall');
+          $table->string('thumb')->nullable();
+          $table->string('xsmall')->nullable();
           $table->timestamps();
     });
   }

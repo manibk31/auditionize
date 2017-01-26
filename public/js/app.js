@@ -1,4 +1,5 @@
-document.getElementById('uploadpreview').style.display="none";
+
+
 $(document).ready(function() {
 
 
@@ -70,6 +71,7 @@ $(function() {
        $(theModal + ' iframe').attr('src', videoSRC);
      });
    });
+	 document.getElementById('uploadpreview').style.display="none";
  });
 
  var text_max = 1000;
@@ -93,7 +95,7 @@ $(function() {
 
  document.getElementById("galleryimages").onchange = function () {
 
-		$('#uploadpreview').show();
+	$('#uploadpreview').show();
 
 
 

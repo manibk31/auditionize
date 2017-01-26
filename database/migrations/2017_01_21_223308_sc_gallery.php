@@ -18,8 +18,8 @@ class ScGallery extends Migration
         $table->increments('id');
         $table->string('username');
         $table->string('fullsize');
-        $table->string('thumb');
-        $table->string('caption');
+        $table->string('thumb')->nullable();
+        $table->string('caption')->nullable();
         $table->timestamps();
     });
 }

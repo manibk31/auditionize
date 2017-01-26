@@ -22,7 +22,7 @@ class ScPersonalInfo extends Migration
           $table->string('gender');
           $table->string('location');
           $table->string('primaryrole');
-          $table->text('about');
+          $table->text('about')->nullable();
           $table->timestamps();
     });
 }

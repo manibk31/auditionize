@@ -12,6 +12,7 @@ use App\sc_gallery as galleryimage;
 
 
 
+
 class EditController extends Controller
 {
     //
@@ -45,28 +46,76 @@ class EditController extends Controller
     return redirect()->route('edit_profile')->with('info','Details Updated Successfully!');
   }
 function viewProfile(){
+  $username='test123';
+  $gallery=new galleryimage();
   $personal=new personal();
-  $personaldata=$personal::where('username','test123')->first();
+  $personaldata=$personal::where('username',$username)->first();
   $profilepicture=new profilepictures;
   $profilepicturedata=profilepictures::where('username','test123')->first();
   $aboutlength=strlen($personaldata);
-  return view('edit_profile')->with('personal',$personaldata)->with('profilepicture',$profilepicture)->with('aboutlen',$aboutlength);
+$galleryimages=null;
+  $gallerycount=galleryimage::where('username',$username)->count();
+  if($gallerycount==1)
+  {
+    $galleryimages=$gallery::where('username',$username)->first();
+  }
+  else if($gallerycount>1)
+  {
+  $galleryimages=$gallery::where('username',$username)->get();
+  }
 
-}
+  return view('edit_profile')->with('personal',$personaldata)->with('profilepicture',$profilepicture)->with('aboutlen',$aboutlength)
+          ->with('imagecount',$gallerycount)
+          ->with('images',$galleryimages);
+  }
 function diplayProfilePicture($filename){
 $profilepictures= profilepictures::where('username','test123')->first();
 $content=Storage::disk('local')->get($profilepictures->fullsize);
 return Image::make($content)->response();
 }
+
+function displayGalleryImage($path){
+$content=Storage::disk('local')->get('uploads/'.$path);
+return Image::make($content)->response();
+}
+
 function postGalleryImage(Request $req)
 {
+  $this->validate($req, [
+    'galleryimage'=>'required|image',
+    'caption'=>'max:225'
+  ]);
   $galleryimage=new galleryimage();
   $username='test123';
-  $path=Storage::disk('local')->putFileAs('uploads', $req->file('galleryimage'),time().'.jpeg');
-  $galleryimage::where('username','test123')->update(['fullsize'=>$path]);
+  $filename=time().'.jpeg';
+  $path=Storage::disk('local')->putFileAs('uploads', $req->file('galleryimage'),$filename);
   if($req->input('caption')!=null)
   {
-    $galleryimage::where('username','test123')->update(['caption'=>$req->input('caption')]);
+    $galleryimage->username=$username;
+    $galleryimage->fullsize=$filename;
+    $galleryimage->caption=$req->input('caption');
+    $galleryimage->save();
   }
+  else {
+
+      $galleryimage->username=$username;
+      $galleryimage->fullsize=$filename;
+      $galleryimage->save();
+  }
+  return redirect()->route('edit_profile')->with('info','Successfully Uploaded an Image');
+}
+
+function editImage(Request $req)
+{
+if($req->has('updatecaption'))
+{
+
+}
+else if($req->has('deleteimage'))
+{
+
+
+}
+
 }
 }

@@ -22,5 +22,7 @@
         Route::get('/edit_profile',array('as'=>'edit_profile','uses'=>'EditController@viewProfile'));
         Route::get('/home', 'HomeController@index');
         Route::get('/profilepicture/{filename}',array('as'=>'profilepicture','uses'=>'EditController@diplayProfilePicture'));
+        Route::get('/gallerydisplay/uploads/{path}',array('as'=>'gallerydisplay','uses'=>'EditController@displayGalleryImage'));
         Route::post('/galleryimage',array('as'=>'galleryimage','uses'=>'EditController@postGalleryImage'));
+        Route::post('/editimage',array('as'=>'editimage','uses'=>'EditController@editImage'));
         Auth::routes();

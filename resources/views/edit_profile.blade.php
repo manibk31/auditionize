@@ -138,10 +138,20 @@
   <div id="edittab" class="tab-content container">
     <div id="home" class="tab-pane fade in active">
       <div id="mobileimg" class="zoom-gallery">
+
+
+@if($images!=null)
+
+@if($imagecount>1)
+@foreach ($images as $image)
         <div class="editimage col-md-12">
         <div class="col-md-3">
-        <img  class="response-img" src="http://i.dailymail.co.uk/i/pix/2016/01/05/08/0FC6C4F300000514-3385023-image-a-6_1451983721020.jpg"  height="200" width="200">
+
+       <img  class="response-img" src="{{route('gallerydisplay',['path'=>$image->fullsize])}}"  height="200" width="200">
+
       </div>
+      <form method="post" action="{{route('editimage')}}">
+          {{ csrf_field() }}
       <div class="col-md-9">
         <div class="form-group">
           <label class="col-md-3 control-label">Caption:</label>
@@ -151,11 +161,11 @@
           <div class="form-group">
 
             <div class="col-md-3" style="margin-top:20px;" >
-              <input  class="btn btn-primary" value="Update Caption" type="submit">
+              <input  class="btn btn-primary" value="Update Caption" name="updatecaption" type="submit">
               <span></span>
             </div>
             <div class="col-md-3 " style="margin-top:20px;" >
-              <input  class="btn btn-primary" value="Delete Image" type="submit">
+              <input  class="btn btn-primary" value="Delete Image" name="deleteimage" type="submit">
               <span></span>
             </div>
           </div>
@@ -163,16 +173,54 @@
         <div >
         </div>
         </div>
+      </form>
     </div>
+@endforeach
+@else
 
-<form method="post" action="{{route('galleryimage')}}">
+<div class="editimage col-md-12">
+<div class="col-md-3">
+
+<img  class="response-img" src="{{route('gallerydisplay',['path'=>$images->fullsize])}}"  height="200" width="200">
+
+</div>
+<form method="post" action="{{route('editimage')}}">
+  {{ csrf_field() }}
+<div class="col-md-9">
+<div class="form-group">
+  <label class="col-md-3 control-label">Caption:</label>
+  <div class="col-md-12">
+    <input class="form-control" type="text" name="caption">
+  </div>
+  <div class="form-group">
+
+    <div class="col-md-3" style="margin-top:20px;" >
+      <input  class="btn btn-primary" value="Update Caption" name="updatecaption" type="submit">
+      <span></span>
+    </div>
+    <div class="col-md-3 " style="margin-top:20px;" >
+      <input  class="btn btn-primary" value="Delete Image" name="deleteimage" type="submit">
+      <span></span>
+    </div>
+  </div>
+</div>
+<div >
+</div>
+</div>
+</form>
+</div>
+
+@endif
+@endif
+
+<form method="post" action="{{route('galleryimage')}}" enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="padding-left-0" style="margin-bottom:-10px;">
       <label>Add Images:</label>
     </div>
   <div class="padding-left-0 ">
     <div class="col-md-3 padding-bottom-25 padding-left-0" style="margin-top:20px;" >
-        <div class="btn btn-primary"><input type="file" id="galleryimages" name="galleryimage" /></div>
+        <div class="btn btn-primary"><input type="file" id="galleryimages" name="galleryimage"></div>
     </div>
   </div>
 
