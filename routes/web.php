@@ -14,8 +14,7 @@
 
 
 
-    // Place all your web routes here...
-
+        // Place all your web routes here...
         // Place all your web routes here...(Cut all `Route` which are define in `Route file`, paste here)
         Route::get('/', array('as'=>'view_profile','uses'=>'ProfileController@getProfile'));
         Route::post('/post_personal',array('as'=>'post_personal','uses'=>'EditController@postPersonal'));
@@ -25,4 +24,7 @@
         Route::get('/gallerydisplay/uploads/{path}',array('as'=>'gallerydisplay','uses'=>'EditController@displayGalleryImage'));
         Route::post('/galleryimage',array('as'=>'galleryimage','uses'=>'EditController@postGalleryImage'));
         Route::post('/editimage',array('as'=>'editimage','uses'=>'EditController@editImage'));
+        Route::post('/addvideo',array('as'=>'addvideo','uses'=>'EditController@postVideo'));
+        Route::post('/editvideo',array('as'=>'editvideo','uses'=>'EditController@editvideo'));
+        Route::post('/postphysicaldetails',array('as'=>'postphysicaldetails','uses'=>'EditController@postPhysicalDetails'));
         Auth::routes();

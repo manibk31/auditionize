@@ -52,7 +52,17 @@ $(document).ready(function() {
     }
 
   });
-
+	$(".video").click(function () {
+ 	 var theModal = $(this).data("target"),
+ 	 videoSRC = $(this).attr("data-video"),
+ 	 videoSRCauto = videoSRC;
+ 	 $(theModal + ' iframe').attr('src', videoSRCauto);
+ 	 $(theModal + ' button.close').click(function () {
+ 		 $(theModal + ' iframe').attr('src', videoSRC);
+ 	 });
+  });
+  document.getElementById('uploadpreview').style.display="none";
+  document.getElementById('videoform').style.display="none";
 
 
 
@@ -61,18 +71,6 @@ $(document).ready(function() {
 
 });
 
-$(function() {
-   $(".video").click(function () {
-     var theModal = $(this).data("target"),
-     videoSRC = $(this).attr("data-video"),
-     videoSRCauto = videoSRC;
-     $(theModal + ' iframe').attr('src', videoSRCauto);
-     $(theModal + ' button.close').click(function () {
-       $(theModal + ' iframe').attr('src', videoSRC);
-     });
-   });
-	 document.getElementById('uploadpreview').style.display="none";
- });
 
  var text_max = 1000;
 
@@ -110,11 +108,8 @@ $(function() {
      reader.readAsDataURL(this.files[0]);
  };
 
+	$("#addvideo").click(function(){
 
+		$("#videoform").show();
 
-/*Accordion*/
-
-
-
-
-/*Accordion*/
+	});
